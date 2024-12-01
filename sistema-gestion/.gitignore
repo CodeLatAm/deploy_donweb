@@ -1,5 +1,9 @@
 HELP.md
-#target/
+# Ignorar todos los archivos en target/
+target/
+
+# Excepción: Permitir subir el archivo específico del JAR
+!sistema-gestion/target/sistema-gestion-0.0.1-SNAPSHOT.jar
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
