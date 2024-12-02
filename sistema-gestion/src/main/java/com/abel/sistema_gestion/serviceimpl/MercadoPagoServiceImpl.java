@@ -73,9 +73,12 @@ public class MercadoPagoServiceImpl implements MercadoPagoService {
 
         // URLs de redireccionamiento (cuando el pago se compl  ete, falle, o quede pendiente)
         PreferenceBackUrlsRequest backUrlsRequest = PreferenceBackUrlsRequest.builder()
-                .success("http://localhost:4200/main/plan/payments")  // URL de éxito
-                .failure("http://localhost:4200/main/plan/payments")  // URL de fallo
-                .pending("http://localhost:4200/main/plan/payments")  // URL de pendiente
+                //.success("http://localhost:4200/main/plan/payments")  // URL de éxito
+                //.failure("http://localhost:4200/main/plan/payments")  // URL de fallo
+                //.pending("http://localhost:4200/main/plan/payments")  // URL de pendiente
+                .success("http://vendepro.com.ar/main/plan/payments")  // URL de éxito
+                .failure("http://vendepro.com.ar/main/plan/payments")  // URL de fallo
+                .pending("http://vendepro.com.ar/main/plan/payments")  // URL de pendiente
                 .build();
 
         // Métodos de pago excluidos
@@ -408,10 +411,12 @@ public class MercadoPagoServiceImpl implements MercadoPagoService {
                 )
                 .paymentMethods(paymentMethods)
                 .backUrls(PreferenceBackUrlsRequest.builder()
-                        .success("http://localhost:4200/main/plan/monthly")
-                        .failure("http://localhost:4200/main/plan/monthly")
-                        .pending("http://localhost:4200/main/plan/monthly")
-
+                        //.success("http://localhost:4200/main/plan/monthly")
+                        //.failure("http://localhost:4200/main/plan/monthly")
+                        //.pending("http://localhost:4200/main/plan/monthly")
+                        .success("http://vendepro.com.ar/main/plan/monthly")
+                        .failure("http://vendepro.com.ar/main/plan/monthly")
+                        .pending("http://vendepro.com.ar/main/plan/monthly")
                         .build()
                 )
                 .purpose("wallet_purchase") // El propósito es "subscription"

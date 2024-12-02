@@ -56,8 +56,8 @@ public class EmailServiceImpl implements EmailService {
     }
 
     private static String getBody(User user, String token) {
-        String verificationUrl = "http://localhost:4200/auth?token=" + token;
-        //String verificationUrl = "https://vendepro.com.ar/auth?token=" + token;
+        //String verificationUrl = "http://localhost:4200/auth?token=" + token;
+        String verificationUrl = "https://vendepro.com.ar/auth?token=" + token;
 
         return "<html>" +
                 "<head>" +
