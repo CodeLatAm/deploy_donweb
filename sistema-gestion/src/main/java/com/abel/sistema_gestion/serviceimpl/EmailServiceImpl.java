@@ -45,10 +45,10 @@ public class EmailServiceImpl implements EmailService {
         helper.setText(body, true); // `true` indica que el contenido es HTML
         helper.setSentDate(new Date());
         // Obtener la imagen desde el directorio resources/static
-        File imageFile = new ClassPathResource("static/image-email.jpg").getFile();
+        //File imageFile = new ClassPathResource("static/image-email.jpg").getFile();
 
         // Agregar la imagen como un archivo inline (embebido)
-        helper.addInline("imageCid", imageFile); // "imageCid" es el Content-ID
+        //helper.addInline("imageCid", imageFile); // "imageCid" es el Content-ID
 
         // Enviar el correo
         mailSender.send(mimeMessage);
@@ -57,6 +57,7 @@ public class EmailServiceImpl implements EmailService {
 
     private static String getBody(User user, String token) {
         String verificationUrl = "http://localhost:4200/auth?token=" + token;
+        //String verificationUrl = "https://vendepro.com.ar/auth?token=" + token;
 
         return "<html>" +
                 "<head>" +
@@ -76,7 +77,6 @@ public class EmailServiceImpl implements EmailService {
                 "<body>" +
                 "  <div class='container'>" +
                 "    <div class='header'>" +
-                "      <img src='cid:imageCid' alt='Logo de Venta Pro' style='width: 150px; height: auto;'>" +
                 "      <h1>Venta Pro</h1>" +
                 "    </div>" +
                 "    <div class='content'>" +
