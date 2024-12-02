@@ -12,7 +12,7 @@ services:
       - JWT_TOKEN=K0bt3Jgr/zP3zdc4QuzJcS4QjrBHB0YJmUTuyAC6ZSc=
       - MP_TOKEN=APP_USR-1605892068179082-102422-b9cd3115d7fbd96c2dbeaf8306c67838-1737579152
       - SERVER_PORT=8080
-      - SERVER_URL=http://149.50.137.111
+      - SERVER_URL=http://149.50.137.111:8080
     ports:
       - "8080:8080"
     depends_on: []
