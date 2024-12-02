@@ -7,8 +7,8 @@ services:
       - DATASOURCE_URL=jdbc:mysql://149.50.137.111:3306/gestion_bd?useSSL=false
       - DATASOURCE_USER=admin2
       - DATASOURCE_PASS=Fiorell@2008
-      - USER_EMAIL=tu-email@gmail.com
-      - PASS_EMAIL=tu-password-email
+      - USER_EMAIL=tu-abel.acevedo.3581@gmail.com
+      - PASS_EMAIL=bwzsdgowdmylerzw
       - JWT_TOKEN=K0bt3Jgr/zP3zdc4QuzJcS4QjrBHB0YJmUTuyAC6ZSc=
       - MP_TOKEN=APP_USR-1605892068179082-102422-b9cd3115d7fbd96c2dbeaf8306c67838-1737579152
       - SERVER_PORT=8080
